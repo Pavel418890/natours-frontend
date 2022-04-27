@@ -1,0 +1,67 @@
+.description {
+  display: flex;
+  flex: 0 0 50%;
+  background-color: #fcfcfc;
+  margin-top: calc(0px - 9vw);
+}
+.description > * {
+  padding: 14vw 8vw 10vw;
+  flex: 0 0 50%;
+}
+
+.overviewBox {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.group:not(:last-child) {
+  margin-bottom: 7rem;
+}
+
+.boxDetail {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.boxDetail:not(:last-child) {
+  margin-bottom: 2.25rem;
+}
+.icon {
+  margin-right: 1.25rem;
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: #55c57a;
+}
+
+.label {
+  font-weight: 700;
+  margin-right: 2.25rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.value {
+  text-transform: capitalize;
+}
+
+.image {
+  border-radius: 50%;
+  height: 3.5rem;
+  margin-right: 1.25rem;
+}
+
+.descriptionBox,
+.description {
+  margin-right: 5rem;
+}
+
+.descriptionBox,
+.text {
+  font-size: 1.7rem;
+}
+.descriptionBox,
+.text:not(:last-child) {
+  margin-bottom: 2rem;
+}

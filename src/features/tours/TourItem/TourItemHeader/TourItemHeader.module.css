@@ -1,0 +1,44 @@
+/*.header {*/
+/*    position: relative;*/
+/*}*/
+
+/*.picture {*/
+/*    position: relative;*/
+/*    clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);*/
+/*    height: 22rem;*/
+/*    background-image: linear-gradient(*/
+/*            to right bottom,*/
+/*            rgb(125, 213, 111),*/
+/*            rgb(40, 180, 135)*/
+/*    );*/
+/*}*/
+
+/*.overlay {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    opacity: 0.5;*/
+/*    position: relative;*/
+/*}*/
+.header {
+  position: relative;
+}
+
+.picture {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
+  height: 22rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  opacity: 0.8;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,91 @@
+.userView {
+  background-color: #fff;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.07);
+  display: flex;
+}
+
+.menu {
+  flex: 32rem 0 0;
+  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  padding: 4rem 0;
+}
+
+.adminNav {
+  margin-top: 5.5rem;
+}
+.adminHeading {
+  margin: 0 5rem 1.5rem 4rem;
+  padding-bottom: 3px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  border-bottom: 1px solid currentColor;
+}
+
+.sideNav {
+  list-style: none;
+}
+
+.sideNav li {
+  margin: 1rem 0;
+  border-left: 0 solid #fff;
+  transform: translateX(-3px);
+  transition: all 0.3s;
+}
+
+.activeLink,
+.regularLink:hover {
+  border-left: 4px solid #fff !important;
+  transform: translateX(3px);
+}
+
+.activeLink:link,
+.regularLink:link,
+.activeLink:visited,
+.regularLink:visited {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.icon {
+  height: 1.9rem;
+  width: 1.9rem;
+  color: #f7f7f7;
+  margin-right: 2rem;
+}
+
+.formContainer {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+.formContainer button {
+  text-align: right !important;
+}
+.profileContent {
+  flex: 1;
+  padding: 7rem 0;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.line {
+  margin: 6rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}

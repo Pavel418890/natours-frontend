@@ -1,0 +1,28 @@
+.auth {
+  margin: 0 auto;
+  max-width: 55rem;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 5rem 7rem;
+  border-radius: 0.5rem;
+}
+
+.authForm {
+  margin-bottom: 2rem;
+}
+
+.toggle {
+  margin-left: -1.3rem;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #2e864b;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.toggle:hover {
+  background-color: transparent;
+  color: #7dd56f;
+}

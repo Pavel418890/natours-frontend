@@ -1,0 +1,35 @@
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1.75rem;
+    grid-column-gap: 2rem;
+    padding: 2.5rem 3rem;
+}
+
+.subHeading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    grid-column: 1 / -1;
+}
+
+.text {
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: -1rem;
+    margin-bottom: 0.75rem;
+}
+
+.data {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 0.7rem;
+    height: 2rem;
+    width: 2rem;
+    color: #55c57a;
+}
