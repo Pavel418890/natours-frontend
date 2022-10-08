@@ -1,27 +1,18 @@
-FROM node:alpine3.10 as builder
+FROM node:alpine3.16 as builder
 
-WORKDIR /app
-
-COPY package*.json /app/
-
+COPY . /
 RUN npm i
 
 ENV VITE_SVG_PATH="/usr/share/nginx/html/public"
-ENV VITE_API_URL="https://api.natours-club.site"
-
-COPY . /app/
-
-ENV VITE_API_URL=https://api.natours-club.site
-
+ARG VITE_API_URL="https://api.natours-club.site"
 
 RUN npm run build
 
-FROM nginx:1.21.6-alpine
+FROM nginx:1.9.9
 
-COPY --from=builder /app/dist/ /usr/share/nginx/html
+COPY --from=builder /dist/ /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf
-
 
 COPY nginx.conf /etc/nginx/nginx.conf
 

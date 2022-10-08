@@ -3,12 +3,10 @@ version: '3.9'
 services:
   ui:
     container_name: ui
-    #    build:
-    #  context: .
-    #  dockerfile: dev.Dockerfile
-#      dockerfile: Dockerfile
-
-    image: plots418890/natours_frontend:dev
+    build:
+      context: .
+      args:
+        - VITE_API_URL=http://localhost:8888
     ports:
       - 8880:80
     restart: on-failure
