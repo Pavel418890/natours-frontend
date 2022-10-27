@@ -6,10 +6,10 @@ services:
     build:
       context: .
       args:
-        VITE_API_URL: ${VITE_API_URL-https://api.natours-club.site}
-    image: plots418890/natours-frontend
+        VITE_API_URL: ${VITE_API_URL-http://localhost:8888}
+    image: plots418890/natours-frontend:dev
     ports:
-    - 80:80
+    - 3000:80
     restart: on-failure
     networks:
     - frontend
