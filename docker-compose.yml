@@ -6,13 +6,13 @@ services:
     build:
       context: .
       args:
-        - VITE_API_URL=http://localhost:8888
+      - ${VITE_API_URL?Variable not set}
     image: plots418890/natours-frontend:dev
     ports:
-      - 8880:80
+    - 8880:80
     restart: on-failure
     networks:
-      - frontend
+    - frontend
 
 networks:
   frontend:
