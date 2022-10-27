@@ -6,7 +6,7 @@ services:
     build:
       context: .
       args:
-        VITE_API_URL: ${VITE_API_URL-http://localhost:8888}
+        VITE_API_URL: ${VITE_API_URL-http://backend}
     image: plots418890/natours-frontend:dev
     ports:
     - 3000:80
