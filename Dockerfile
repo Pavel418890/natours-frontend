@@ -4,7 +4,7 @@ COPY . /
 RUN npm i
 
 ENV VITE_SVG_PATH="/usr/share/nginx/html/public"
-ARG VITE_API_URL="https://api.natours-club.site"
+ARG VITE_API_URL="http://api.natours-club.site"
 
 RUN npm run build
 

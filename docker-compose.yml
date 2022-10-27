@@ -1,12 +1,13 @@
 version: '3.9'
 
 services:
-  ui:
-    container_name: ui
+  frontend:
+    container_name: frontend
     build:
       context: .
       args:
         - VITE_API_URL=http://localhost:8888
+    image: plots418890/natours-frontend:dev
     ports:
       - 8880:80
     restart: on-failure
@@ -15,4 +16,4 @@ services:
 
 networks:
   frontend:
-    name: "uinet"
+    name: "natoursnet"
