@@ -6,7 +6,7 @@ services:
     build:
       context: .
       args:
-      - ${VITE_API_URL?Variable not set}
+        VITE_API_URL: ${VITE_API_URL?Variable not set}
     image: plots418890/natours-frontend:dev
     ports:
     - 8880:80
