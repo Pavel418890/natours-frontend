@@ -35,16 +35,18 @@ const UpdateUserEmailAddressForm: React.FC = () => {
 
   React.useEffect(() => {
     isLoading && dispatch(showNotification({ status: QueryStatus.pending }));
-    isSuccess &&
+    if (isSuccess) {
       dispatch(
         showNotification({
           status: QueryStatus.fulfilled,
           title: 'Success',
           message: 'Email was updated! Please confirm your new email address!',
         })
-      ) &&
-      setIsConfirmationSended(true) &&
+      );
+      setIsConfirmationSended(true);
       dispatch(userActions.updateUserEmailAddress(responseWithUpdatedEmail));
+    }
+
     isError &&
       dispatch(
         showNotification({

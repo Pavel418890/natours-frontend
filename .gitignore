@@ -1,5 +1,2 @@
 .idea
-node_modules
-dev_data
-.vscode
-.env
+dist

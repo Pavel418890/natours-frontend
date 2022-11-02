@@ -2,19 +2,16 @@ import {
   createEntityAdapter,
   createSlice,
   PayloadAction,
-} from "@reduxjs/toolkit";
+} from '@reduxjs/toolkit';
 
-import type { Locations, StartLocation } from "../locations/locationsSlice";
-import type { User, Role } from "../user/userSlice";
-import type { Review } from "../reviews/reviewsSlice";
-import type { RootState } from "../../app/store";
-
-import { store } from "../../app/store";
+import type { Locations, StartLocation } from '../locations/locationsSlice';
+import type { Role } from '../user/userSlice';
+import type { Review } from '../reviews/reviewsSlice';
 
 export enum Difficulty {
-  easy = "easy",
-  medium = "medium",
-  difficult = "difficult",
+  easy = 'easy',
+  medium = 'medium',
+  difficult = 'difficult',
 }
 
 export interface Guide {
@@ -57,11 +54,10 @@ export interface Tour {
 
 export const toursAdapter = createEntityAdapter<Tour>({
   selectId: (tour) => tour.id,
-  // sortComparer: (a, b) => a.name.localeCompare(b.name),
 });
 
 const tourSlice = createSlice({
-  name: "tours",
+  name: 'tours',
   initialState: toursAdapter.getInitialState(),
   reducers: {
     setTours: toursAdapter.addMany,
